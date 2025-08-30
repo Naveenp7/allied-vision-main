@@ -1,11 +1,9 @@
-import { Layout } from '@/components/layout/layout';
 import { motion } from 'framer-motion';
 import { CardStack } from '@/components/ui/card-stack';
 
 const Projects = () => {
   return (
-    <Layout>
-      <div className="min-h-screen pt-32 pb-16">
+    <div className="min-h-screen pt-32 pb-16">
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center space-y-8"
@@ -34,7 +32,6 @@ const Projects = () => {
           </motion.div>
         </div>
       </div>
-    </Layout>
   );
 };
 
