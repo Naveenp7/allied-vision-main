@@ -27,7 +27,7 @@ export const HeroCards = () => {
         >
           <MetricCard
             title="Monthly Revenue"
-            value="$47.2K"
+            value="47.2K"
             change="+12.5% from last month"
             trend="up"
             className="animate-float"
@@ -69,7 +69,7 @@ export const HeroCards = () => {
         >
           <CardStack className="h-32 flex items-center justify-center animate-float" style={{ animationDelay: '2s' }}>
             <div className="text-center space-y-2">
-              <ProgressRing percentage={87} size={60} label="87%" />
+              <ProgressRing percentage={100} size={60} label="100%" />
               <p className="text-xs text-text-muted">Completion</p>
             </div>
           </CardStack>
@@ -88,8 +88,8 @@ export const HeroCards = () => {
                 <Users size={16} className="text-primary" />
               </div>
               <div>
-                <p className="text-lg font-bold font-sora">2.4K</p>
-                <p className="text-xs text-text-muted">Users</p>
+                <p className="text-lg font-bold font-sora">10+</p>
+                <p className="text-xs text-text-muted">Clients</p>
               </div>
             </div>
           </CardStack>

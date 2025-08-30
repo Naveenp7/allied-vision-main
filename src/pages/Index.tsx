@@ -1,7 +1,7 @@
 import { Layout } from '@/components/layout/layout';
 import { Hero } from '@/components/sections/hero';
 import { Features } from '@/components/sections/features';
-import Projects from '@/pages/Projects';
+import { ProjectsSection } from '@/components/sections/projects';
 import { CTASection } from '@/components/sections/cta-section';
 
 const Index = () => {
@@ -9,7 +9,7 @@ const Index = () => {
     <Layout>
       <Hero />
       <Features />
-      <Projects />
+      <ProjectsSection />
       <CTASection />
     </Layout>
   );
