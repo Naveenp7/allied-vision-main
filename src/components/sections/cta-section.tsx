@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { PillButton } from '@/components/ui/nav-pill-bar';
 import { CardStack } from '@/components/ui/card-stack';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export const CTASection = () => {
   return (
@@ -61,12 +61,11 @@ export const CTASection = () => {
                 transition={{ delay: 0.7 }}
                 viewport={{ once: true }}
               >
-                <PillButton variant="hero" size="lg" className="group">
-                  Start Your Project
-                  <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                <PillButton variant="hero" size="lg" className="group pt-[15px] pb-[14px] px-[111px] sm:px-8 sm:py-4" to="/contact">
+                  <div className="flex flex-row">Start Your Project</div>
                 </PillButton>
                 
-                <PillButton variant="glass" size="lg">
+                <PillButton variant="glass" size="lg" to="+91 7012895181">
                   Schedule a Call
                 </PillButton>
               </motion.div>

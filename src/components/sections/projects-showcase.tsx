@@ -137,7 +137,7 @@ export const ProjectsShowcase = () => {
           transition={{ delay: 0.6 }}
           viewport={{ once: true }}
         >
-          <PillButton variant="glass" size="lg">
+          <PillButton variant="glass" size="lg" to="/projects">
             View All Projects
           </PillButton>
         </motion.div>

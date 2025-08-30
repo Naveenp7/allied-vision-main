@@ -89,15 +89,17 @@ interface PillButtonProps {
   className?: string;
   onClick?: () => void;
   disabled?: boolean;
+  to?: string;
 }
 
-export const PillButton = ({ 
-  children, 
-  variant = 'primary', 
-  size = 'md', 
+export const PillButton = ({
+  children,
+  variant = 'primary',
+  size = 'md',
   className,
   onClick,
-  disabled 
+  disabled,
+  to
 }: PillButtonProps) => {
   const variants = {
     primary: "pill-primary",
@@ -112,7 +114,7 @@ export const PillButton = ({
     lg: "px-8 py-4 text-base"
   };
 
-  return (
+  const btn = (
     <motion.button
       className={cn(
         "pill font-medium transition-all duration-300",
@@ -130,4 +132,6 @@ export const PillButton = ({
       {children}
     </motion.button>
   );
+
+  return to ? <Link to={to}>{btn}</Link> : btn;
 };

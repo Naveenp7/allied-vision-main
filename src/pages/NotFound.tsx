@@ -44,7 +44,7 @@ const NotFound = () => {
           </div>
 
           {/* CTA */}
-          <PillButton variant="hero" size="lg" onClick={() => window.location.href = '/'}>
+          <PillButton variant="hero" size="lg" to="/">
             Return Home
           </PillButton>
         </motion.div>

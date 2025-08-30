@@ -37,7 +37,7 @@ export const Header = () => {
           <NavPillBar items={navItems} />
 
           {/* CTA Button */}
-          <PillButton variant="hero" size="md">
+          <PillButton variant="hero" size="md" to="/projects">
             Start Project
           </PillButton>
         </div>
@@ -60,7 +60,7 @@ export const Header = () => {
           />
 
           {/* Mobile CTA */}
-          <PillButton variant="hero" size="sm">
+          <PillButton variant="hero" size="sm" to="/projects">
             Start Project
           </PillButton>
         </div>

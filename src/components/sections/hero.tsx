@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { PillButton } from '@/components/ui/nav-pill-bar';
 import { HeroCards } from './hero-cards';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export const Hero = () => {
   return (
@@ -83,12 +83,13 @@ export const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
-              <PillButton variant="hero" size="lg" className="group">
-                Start a project
-                <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <PillButton variant="hero" size="lg" className="group py-0 pr-[150px] sm:pr-[126px] pl-[148px] sm:px-8 sm:py-4" to="/contact">
+                <span className="flex items-center font-medium">
+                  <div className="py-3 sm:py-0">Start a project</div>
+                </span>
               </PillButton>
-              
-              <PillButton variant="glass" size="lg">
+
+              <PillButton variant="glass" size="lg" to="/projects" className="pl-[151px] pr-[155px] py-3 sm:pl-[43px] sm:pr-[39px] sm:pt-[17px] sm:pb-[15px]">
                 See our work
               </PillButton>
             </motion.div>
